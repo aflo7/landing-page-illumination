@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Arimo', Helvetica, Arial, Lucida, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.top-nav-wrapper {
+  display: none;
+}
+
+.bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.top-nav > div {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 700px) {
+  .top-nav-wrapper {
+    display: block;
+    background-color: rgb(16, 81, 150);
+    color: white;
+  }
+
+  .top-nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+  }
+
+  .top-nav > div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .bottom-nav {
+    padding: 2rem 1rem;
+  }
+}
+
+.bottom-nav > div:nth-child(2) {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .bottom-nav > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: rgb(102, 102, 102);
+  }
+
+  .bottom-nav > div:nth-child(2) > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  .io-search {
+    font-size: 1.5rem;
+  }
+}
+
+main {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 8rem 1rem 8rem 1rem;
+  background: linear-gradient(rgba(11, 90, 164, 0.46), rgba(11, 90, 164, 0.46)),
+    url(https://ilwllc.com/wp-content/uploads/2021/02/AdobeStock_168425228-home-page-cropped-scaled.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  color: rgb(250, 224, 75);
+  text-shadow: 0px 0px 15px #000000;
+}
+.main-p {
+  max-width: 600px;
+  text-shadow: 0px 0px 15px #000000;
+}
+@media screen and (min-width: 800px) {
+  main {
+    padding: 12rem 1rem 12rem 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .main-p {
+    font-size: 2rem;
+  }
+}
+
+.light-blue-wrapper {
+  padding: 3rem 1rem 3rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.light-blue-wrapper-outer {
+  background-color: rgb(185, 204, 214);
+}
+
+.illumination-text-wrapper-outer {
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.illumination-text-wrapper {
+  padding: 3rem 1rem 3rem 1rem;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  .light-blue-wrapper,
+  .illumination-text-wrapper {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
