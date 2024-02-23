@@ -34,7 +34,7 @@ export default function App() {
 
       <main>
         <h1>Illumination Works</h1>
-        <p className='main-p'>User-centric digital transformation for today's modern workforce</p>
+        <p className='main-p'>User-centric digital transformation for today&apos;s modern workforce</p>
       </main>
 
       <div className="light-blue-wrapper-outer">
